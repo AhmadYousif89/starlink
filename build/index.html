@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="icon" href="data:," />
+		<script src="./js/main.js" defer></script>
+		<title>Star Link</title>
+	</head>
+	<body class="min-h-screen bg-stone-100 dark:bg-black dark:text-white">
+		<header class="sticky top-0 z-10 bg-sky-600 text-white">
+			<!-- Main Nav -->
+			<section class="mx-auto flex max-w-7xl items-center justify-between p-8">
+				<h1 class="text-2xl font-medium">
+					<a href="#hero" class="flex items-center gap-1"
+						>🚀 STAR
+						<svg class="icon icon-link">
+							<use xlink:href="./icons.svg#icon-infinity"></use>
+						</svg>
+						LINK
+					</a>
+				</h1>
+				<div>
+					<button id="nav-btn" class="relative h-8 w-8 text-4xl md:hidden">
+						<div
+							class="absolute h-1 w-8 -translate-y-1/2 rounded bg-white transition-all duration-500 before:absolute before:top-0 before:h-1 before:w-8 before:-translate-y-3 before:-translate-x-1/2 before:rounded before:bg-white before:transition-all before:duration-500 after:absolute after:top-0 after:h-1 after:w-8 after:translate-y-3 after:-translate-x-1/2 after:rounded after:bg-white after:transition-all after:duration-500"></div>
+					</button>
+					<nav
+						id="main-nav"
+						class="hidden space-x-8 text-xl md:block"
+						aria-label="main-navigation-bar"></nav>
+				</div>
+			</section>
+			<!-- Mobile Nav Menu -->
+			<section
+				id="mobile-navigation-menu"
+				class="absolute top-0 mt-24 hidden min-h-screen w-full origin-right animate-open-menu flex-col bg-black md:hidden">
+				<nav
+					id="mobile-nav"
+					class="flex flex-col items-center gap-4 pt-24 text-3xl"
+					aria-label="mobile-menu"></nav>
+			</section>
+		</header>
+
+		<!-- Main content -->
+		<main class="mx-auto max-w-7xl">
+			<section
+				id="hero"
+				class="ws:screen-min-h ts:screen-min-h mb-16 flex scroll-mt-28 flex-col items-center justify-center gap-x-16 gap-y-8 p-8 md:flex md:flex-row">
+				<img
+					class="w-1/2 md:order-2 lg:w-1/3"
+					src="./img/rocketdab.png"
+					alt="Rocket Dap" />
+				<article class="sm:w-96">
+					<h2
+						class="max-w-sm text-center text-2xl font-bold text-slate-800 dark:text-white sm:text-4xl md:text-left lg:text-5xl">
+						We Boldly Go
+						<span class="text-sky-700 dark:text-sky-300">Where No Rockets</span>
+						Has Gone Before . . .
+					</h2>
+					<p
+						class="mt-6 max-w-sm text-center text-xl text-slate-700 dark:text-slate-500 md:text-left">
+						We are building the next generation rockets for the next century.
+						From the Moon to Mars, Jupiter and beyond . . .
+					</p>
+					<p
+						class="mt-6 max-w-sm text-center text-2xl text-slate-700 dark:text-slate-400 md:text-left">
+						Think Star
+						<svg class="icon icon-link">
+							<use xlink:href="./icons.svg#icon-infinity"></use>
+						</svg>
+						Link Rockets
+					</p>
+				</article>
+			</section>
+
+			<hr class="mx-auto h-0.5 w-1/2 bg-neutral-500 dark:h-0" />
+
+			<section
+				id="rockets"
+				class="ws:screen-min-h ts:screen-min-h my-12 scroll-mt-52 p-8">
+				<h2
+					class="mb-8 text-center text-3xl font-bold text-slate-800 dark:text-white sm:text-4xl">
+					Our Rockets
+				</h2>
+				<ul
+					class="mx-auto my-12 flex list-none flex-col items-center gap-y-16 gap-x-8 md:flex-row md:items-stretch">
+					<li
+						class="flex w-2/3 flex-col items-center rounded-3xl border-2 border-solid border-slate-800 bg-white py-8 px-4 shadow-xl dark:border-gray-100 dark:bg-black sm:w-3/4">
+						<img src="./img/rocketman.png" alt="Explorer" class="mb-8 w-1/2" />
+						<h3
+							class="text-center text-2xl uppercase text-slate-800 dark:text-white xs:text-3xl">
+							Explorer
+						</h3>
+						<p
+							class="mt-4 text-center text-xl text-slate-800 dark:text-slate-400 md:mb-4 xs:text-2xl">
+							Affordable Exploration
+						</p>
+						<p
+							class="mt-4 hidden text-center text-3xl text-teal-600 dark:text-teal-500 sm:block md:mt-auto">
+							$
+						</p>
+					</li>
+					<li
+						class="flex w-2/3 flex-col items-center rounded-3xl border-2 border-solid border-slate-800 bg-white py-8 px-4 shadow-xl dark:border-gray-100 dark:bg-black sm:w-3/4">
+						<img
+							src="./img/rocketride.png"
+							alt="Adventurer"
+							class="mb-8 w-1/2" />
+						<h3
+							class="text-center text-2xl uppercase text-slate-800 dark:text-white xs:text-3xl">
+							Adventurer
+						</h3>
+						<p
+							class="mt-4 text-center text-xl text-slate-800 dark:text-slate-400 md:mb-4 xs:text-2xl">
+							Best Selling Rocket
+						</p>
+						<p
+							class="mt-4 hidden text-center text-3xl text-teal-600 dark:text-teal-500 sm:block md:mt-auto">
+							$ $
+						</p>
+					</li>
+					<li
+						class="flex w-2/3 flex-col items-center rounded-3xl border-2 border-solid border-slate-800 bg-white py-8 px-4 shadow-xl dark:border-gray-100 dark:bg-black sm:w-3/4">
+						<img
+							src="./img/rocketlaunch.png"
+							alt="Infinity"
+							class="mb-8 w-1/2" />
+						<h3
+							class="text-center text-2xl uppercase text-slate-800 dark:text-white xs:text-3xl">
+							Infinity
+						</h3>
+						<p
+							class="mt-4 text-center text-xl text-slate-800 dark:text-slate-400 md:mb-4 xs:text-2xl">
+							Luxury Star Link Ship
+						</p>
+						<p
+							class="mt-4 hidden text-center text-3xl text-teal-600 dark:text-teal-500 sm:block md:mt-auto">
+							$ $ $
+						</p>
+					</li>
+				</ul>
+			</section>
+
+			<hr class="mx-auto h-0.5 w-1/2 bg-neutral-500 dark:h-0" />
+
+			<section
+				id="testimonials"
+				class="ws:screen-min-h ts:screen-min-h my-12 scroll-mt-52 p-8">
+				<h2
+					class="mb-8 text-center text-3xl font-bold text-slate-800 dark:text-white sm:text-4xl">
+					Testimonials
+				</h2>
+				<figure class="my-12">
+					<blockquote
+						class="relative rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-600 p-12 dark:bg-none">
+						<p
+							class="mt-4 ml-4 text-left text-xl text-slate-100 before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-4 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201c'] after:absolute after:bottom-0 after:right-0 after:-translate-x-2 after:translate-y-12 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201d'] dark:text-neutral-400 sm:text-2xl md:text-3xl">
+							Star Link has always been there for me. Their Explorer rocket
+							arraived in a wooden crate as expected. Life-long customer! A++
+							shopping experience.
+						</p>
+					</blockquote>
+					<figcaption
+						class="mt-2 text-right text-xl italic text-slate-400 sm:text-2xl">
+						&#8212;Wile E. Coyote, Genius
+					</figcaption>
+				</figure>
+				<figure class="my-12">
+					<blockquote
+						class="relative rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-600 p-12 dark:bg-none">
+						<p
+							class="mt-4 ml-4 text-left text-xl text-slate-100 before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-4 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201c'] after:absolute after:bottom-0 after:right-0 after:-translate-x-2 after:translate-y-12 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201d'] dark:text-neutral-400 sm:text-2xl md:text-3xl">
+							The StarLink Adventurer Rocket has thwarted my Illudium Q-36
+							Explosive Space Modulator on several occassions.
+							<span class="italic">This makes me very, very angry!</span>
+							Nevertheless, K-9 and I have awarded StarLink the Martian contract
+							for space exploration rockets based on StarLink's quality and
+							sturdy designs.
+						</p>
+					</blockquote>
+					<figcaption
+						class="mt-2 text-right text-xl italic text-slate-400 sm:text-2xl">
+						&#8212;Marvin The Martian &amp; K-9
+					</figcaption>
+				</figure>
+				<figure class="my-12">
+					<blockquote
+						class="relative rounded-3xl bg-gradient-to-br from-blue-500 to-cyan-600 p-12 dark:bg-none">
+						<p
+							class="mt-4 ml-4 text-left text-xl text-slate-100 before:absolute before:top-0 before:left-0 before:translate-x-2 before:translate-y-4 before:transform before:font-serif before:text-9xl before:text-white before:opacity-25 before:content-['\201c'] after:absolute after:bottom-0 after:right-0 after:-translate-x-2 after:translate-y-12 after:transform after:font-serif after:text-9xl after:text-white after:opacity-25 after:content-['\201d'] dark:text-neutral-400 sm:text-2xl md:text-3xl">
+							I knew I not only wanted &#8212;
+							<span class="italic">I needed</span> &#8212;StarLink's Infinity
+							Rocket for my mission in space. StarLink delivered in one day!
+							Nothing says <q class="italic">Take me to your leader</q> like
+							StarLink's Infinity Rocket!
+							<svg class="icon icon-rocket">
+								<use xlink:href="./icons.svg#icon-rocket"></use>
+							</svg>
+						</p>
+					</blockquote>
+					<figcaption
+						class="mt-2 text-right text-xl italic text-slate-400 sm:text-2xl">
+						&#8212;Buzz Lightyear
+					</figcaption>
+				</figure>
+			</section>
+
+			<hr class="mx-auto h-0.5 w-1/2 bg-neutral-500 dark:h-0" />
+
+			<section
+				id="contacts"
+				class="ws:screen-min-h ts:screen-min-h my-12 scroll-mt-52 p-8">
+				<h2
+					class="mb-8 text-center text-3xl font-bold text-slate-800 dark:text-white sm:text-4xl">
+					Contact Us
+				</h2>
+				<form
+					action="#"
+					class="items-left mx-auto flex max-w-4xl flex-col gap-4 text-2xl sm:text-3xl">
+					<label for="subject">Subject:</label>
+					<input
+						required
+						type="text"
+						id="subject"
+						name="subject"
+						minlength="3"
+						maxlength="60"
+						placeholder="Your Subject"
+						class="w-full rounded-xl border border-solid border-slate-900 p-4 text-2xl text-black focus:outline-none dark:border-none sm:text-3xl" />
+					<label for="message">Message:</label>
+					<textarea
+						name="message"
+						id="message"
+						cols="30"
+						rows="10"
+						placeholder="Your Message"
+						required
+						class="h-80 w-full rounded-xl border border-solid border-slate-900 p-4 text-2xl text-black focus:outline-none dark:border-none sm:text-3xl"></textarea>
+					<button
+						class="w-48 rounded-xl border border-solid border-slate-900 bg-sky-700 p-3 text-white hover:bg-sky-600 active:bg-sky-500 dark:border-none">
+						Submit
+					</button>
+				</form>
+			</section>
+		</main>
+
+		<!-- Start Footer -->
+		<footer id="footer" class="bg-sky-600 py-14 px-8 text-xl text-white">
+			<section
+				class="mx-auto flex max-w-4xl flex-col gap-4 p-4 sm:flex-row sm:justify-between">
+				<address>
+					<h2>Star Link-Powered Products, Inc.</h2>
+					888 Astro Way<br />
+					Fairfield, New Jersey 12345-0000<br />
+					Email:
+					<a href="mailto:inquiries@starlink.com">Inquires@StarLink.com</a
+					><br />
+					Phone: <a href="tel:+000000000">(000) 000-0000</a>
+				</address>
+				<nav class="hidden flex-col gap-4 md:flex" aria-label="footer">
+					<a
+						href="#rockets"
+						class="hover:border-b hover:border-solid hover:opacity-90"
+						>Our Rockets</a
+					>
+					<a
+						href="#testimonials"
+						class="hover:border-b hover:border-solid hover:opacity-90"
+						>Testimonials</a
+					>
+					<a
+						href="#contacts"
+						class="hover:border-b hover:border-solid hover:opacity-90"
+						>Contact Us</a
+					>
+				</nav>
+				<div class="flex flex-col sm:gap-4">
+					<p>Copyright &copy; <span id="year">2022</span></p>
+					<p>All Rights Reserved</p>
+				</div>
+			</section>
+		</footer>
+	</body>
+</html>

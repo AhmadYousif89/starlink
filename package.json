@@ -1,0 +1,18 @@
+{
+	"name": "starlink",
+	"version": "1.0.0",
+	"description": "Web page developed using tailwind css framwork",
+	"main": "tailwind.config.js",
+	"scripts": {
+		"tailwind": "npx tailwindcss -i ./src/input.css -o ./build/css/main.css --watch",
+		"build": "npx tailwindcss -o ./build/css/main.css --minify",
+		"prettier": "npx prettier --write **/*.html"
+	},
+	"keywords": [],
+	"author": "Ahmad Yousif",
+	"license": "ISC",
+	"devDependencies": {
+		"prettier-plugin-tailwindcss": "^0.1.13",
+		"tailwindcss": "^3.1.8"
+	}
+}

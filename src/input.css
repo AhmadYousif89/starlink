@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+	.screen-min-h {
+		min-height: calc(100vh - 100px);
+	}
+	.icon {
+		width: 1.5rem;
+		height: 1.5rem;
+		display: inline-block;
+		fill: currentColor;
+	}
+}
+
+@layer components {
+	.toggle-btn {
+		@apply rotate-180 [&>div::before]:translate-y-0 [&>div::before]:rotate-45 [&>div::after]:translate-y-0 [&>div::after]:-rotate-45 [&>div]:rotate-[270deg] [&>div]:bg-transparent;
+	}
+}
